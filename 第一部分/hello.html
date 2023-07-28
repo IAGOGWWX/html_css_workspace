@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
+
+    <link  rel="shortcut icon" href="img/R-C.png" type="image/x-icon">
 </head>
 <body >
+    
+    </div>
+    
      真正的第一次展示哦！！！
      Hello world
     <h1>标题</h1>
@@ -131,11 +136,184 @@
  -->
 
 
-<embed src="flash/音乐_音频.mp3" type="" width="200px" height="100px">
+<!-- <embed src="flash/音乐_音频.mp3" type="" width="200px" height="100px"> -->
+
+ 
+<!-- <object  data="flash/音乐_音频.mp3" type="" width="200px" height="100px"> -->
+ 
+    <br>
+
+    <iframe src="demo1.html" width="300px" height="150px" frameborder="1px" scrolling="no"></iframe>
+    <iframe src="demo2.html" width="300px" height="150px" frameborder="1px" scroling="yes"></iframe>
+    <iframe src="demo3.html" width="300px" height="150px" frameborder="1px"></iframe>
+    <iframe src="demo4.html" width="300px" height="150px" frameborder="1px"></iframe>
 
 
 
 
 
-</body>
+
+
+
+
+ <br>
+ <!-- <input type="textM readonly="readonly"/>
+ <input type="checkbox" checked="checked"/> -->
+    只读 ：<input type=ntext  readonly/>
+    <input type="checkbox" checked/>
+    <br>
+
+    浏览器标题栏小图标:
+    想要实现这个效果，我们只需要在head标签添加一个link标签即可。
+    <br>
+
+    <a href="#icon">icon</a>
+
+
+
+
+
+    <br>
+
+
+
+
+    <div class="img-list">
+     
+        <img src="img/favicon.ico" alt="小图标"/>
+        <br>
+        <span>HTML入门教程 </span>
+    </div>
+<!-- figure元素用于包含图片和图注，figcaption元素用于表示图注文字。在实际开发中， 对于“图片+图注”效果，我们都建议使用
+    figure和figcaption这两个元素来实现，从而使 得页面的语义更加良好。 -->
+
+    <figure >
+        <img src="img/favicon.ico" alt="小图标"/>
+        <figcaption>HTML入门教程</figcaption>
+    </figure>
+
+
+    <div>
+        <input id="rdo1" name="rdo1" type="radio"/>单选框
+        <input id="cbk1" name="cbk1" type="checkbox" />复选框
+    </div>
+
+    <div>
+        <input id="rdo" name="rdo" type="radio"/><label for="rdo">单选框</label>
+        <input id="cbk" name="cbk" type="checkbox" /><label for="cbk">复选框</label>
+    </div>
+
+
+
+
+
+
+
+
+    fieldset 标签和 legend 标签。
+
+    <fieldset>
+     
+        <legend> 表单组标题 </legend>
+     
+    </fieldset>
+
+    表单形成了非常美观的“书签”效果
+    <form action="#" method="post">
+        <fieldset>
+            
+            <legend>登录绿叶学习网</legend>
+            <p>
+                <label for="name"> 账号：</1abel><input type="text" id="name" name="name" />
+            </p>
+            <label for="pwd"> 密码：</label><input type="password" id="pwd" name="pwd" />
+            </p>
+            <input type="checkbox" id="remember-me" name="remember-me" /> <label for="remember-me"> 记住我 </label>
+            <input type="submit" value="登录" />
+ 
+        </fieldset>
+    </form>
+
+
+    <!-- 上面两个例子使用＜br/＞标签的方式是错误的，这也是＜br/＞标签很常见的错误
+    用法。 事实上，＜br/＞标签有自己特定的语义，不能随便用来实现换行效果
+    。W3C标准规定，＜br/＞ 标签仅仅用于段落中的换行，不能用于其他情况。
+    也就是说，＜br/＞标签只适合用于p标签内 部的换行，不能用于其他标签。 -->
+
+    <ul>
+        <li><span>1</span>HTML</li>
+        <li><span>2</span>CSS</li>
+        <li><span>3</span>JavaSript</li>
+    </ul>
+    <ul>
+        <li><span>l</span>HTML 教程 </li>
+        <li><span>2</span>CSS 教程 </li>
+        <li><Sp^n>3</span>JavaScript 教程 </li> 
+    </ul>
+
+
+   
+        <p>新鲜的新西兰奇异果</p>
+        <p><del>原价:￥6.50/kg</del></p>
+        <p><ins>现在仅售：￥4.00/kg</ins></p>
+        
+        <!-- 注意：在 chrome 浏览器中已经禁用了 autoplay 属性 -->
+        <!-- <audio src="./media/snow.mp3" controls autoplay></audio> -->
+        ​
+        <!-- 
+            因为不同浏览器支持不同的格式，所以我们采取的方案是这个音频准备多个文件
+            -->
+        <audio controls>
+            <source src="flash/音乐_音频.mp3" type="audio/mpeg" />
+        </audio>
+        <!-- muted 静音 ；自动播放 autoplay  -->
+        <!-- <video src="flash/2.mp4" controls="controls" preload="auto" autoplay muted></video> -->
+
+
+
+        <br>
+        <input type="color" name="color1" id=""><br>
+        <label for="手机号码" >手机号码：</label><input id="手机号码" type="tel" required placeholder="号码：" name="telI" id="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
