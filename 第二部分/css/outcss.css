@@ -1,0 +1,53 @@
+p{
+    color: red;
+}
+
+h2{
+    color:blue
+}
+
+.caocao{
+    font-size:20px;
+    color: rgb(37, 139, 85);
+}
+
+#firstP{
+    color: rgba(30, 63, 183, 0.971);
+}	
+
+/* 1.标签选择器和类选择器合起来使用----复合选择器 */
+p.caocao{
+    color: red;
+}
+
+/* 1.标签选择器和ID选择器合起来使用----复合选择器 */
+p#firstP{
+   font-size: 30px;
+}
+
+/* 2.组合选择器 中间用逗号分隔 */
+
+p,h2,p.caocao,P#firstP,.lib{
+
+    color: green;
+}
+
+
+div p{
+    color:rgb(36, 23, 148);
+    text-decoration:underline;
+}
+
+
+div>p{
+    color:rgb(159, 35, 122);
+    text-decoration:underline;
+}
+
+div,h3{
+    color: lightcoral;
+}
+div p.innerC{
+    color: red;
+}
+

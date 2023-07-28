@@ -1,0 +1,28 @@
+
+a:link{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    font-size: 50px;
+    color: gold;
+ 
+}
+
+a:hover{
+    font-size: 40px;
+    color: red;
+}
+
+a:active{
+    font-size: 15px;
+    color: blueviolet;
+}
+
+p:hover{
+    color:red;
+}
+p:active{
+    color:blue;
+}
