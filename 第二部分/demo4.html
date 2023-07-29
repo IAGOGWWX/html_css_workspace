@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 优先级 */
+        /* 标签选择器 < 类选择器 < ID选择器 < 混合选择器 < 行内样式 */
+        /* 可以使用!important使某个样式有最高的优先级 */
+        /* 使用方法：选择器 {样式：值 !important} */
+        div {
+            
+            font-size: 20px !important;
+            
+        }
+        .hello{
+            font-size: 30px;
+
+        }
+        #world{
+            font-size: 50px;
+
+        }
+        div#world{
+            font-size: 70px;
+
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div  class="hello" id="world" style="color:#ff7300 ; font-size: 80px;">CSS从入门到精通</div>
+
+    <p>只是一个普通的p元素</p>
+</body>
+</html>
