@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+			width:50px;
+			height:50px;
+			background:#cccccc;
+		}
+
+        .div1{
+            margin-bottom: 20px;
+        }
+        .div2{
+            margin-top: 30px;
+        }
+
+        .div3{
+            width: 100px;
+            height: 100px;
+            background:blue;
+			margin-top:20px;
+            padding:5px;
+            /* border:1px solid red; */
+        }
+        .div4{
+            margin: 20px;
+        }
+        p{
+			margin:20px 0;
+		}
+    </style>
+</head>
+<body>
+    div1的下边距和div2的上边距重合
+    <div class="div1">div1</div>
+	<div class="div2">div2</div>
+	<hr>
+    当一个元素包含在另一个元素中时，并且没有内边距或边框把外边距分隔开时，两个元素的上外边距会发生合并
+	<div class="div3">
+		<div class="div4"></div>
+	</div>
+	<hr>
+	<p>p1</p>
+	<p>p2</p>
+	<p>p3</p>
+	<p>p4</p>
+	<p>p5</p>
+	<p>p6</p>
+	<p>p7</p>
+</body>
+</html>
