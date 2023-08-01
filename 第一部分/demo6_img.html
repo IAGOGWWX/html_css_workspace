@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <figure>
+        <!-- 点击图片触发到百度百科 -->
+        <a href="https://baike.baidu.com/item/%E5%85%AB%E5%A4%A7%E8%A1%8C%E6%98%9F/7990672?fr=ge_ala">
+            <img usemap="#sun_other" src="img/solar.jpg" alt="这是太阳系八大行星示意图" title="太阳系八大行星示意图">
+        </a>
+
+        <figcaption>
+            <h2>太阳系八大行星示意图</h2>
+        </figcaption>
+
+        <p>
+            八大行星（8 Planets），是指太阳系的八个大行星，
+            按照离太阳的距离从近到远，它们依次为水星（☿）、金星（♀）、地球（⊕）、火星（♂）、木星（♃）、土星（♄）、天王星（♅）、海王星（♆或⛢ [1]）。
+            八大行星自转方向多数也和公转方向一致。只有金星和天王星两个例外。金星自转方向与公转方向相反，天王星则是与公转轨道呈97°角的“躺着”旋转。
+        </p>
+    </figure>
+<!--     
+    shape 图片上部分区域的形状 
+    coords 坐标 circle 的坐标 圆心 半径
+    区域形状	属性值
+    全区域	default
+    圆形	circle   圆心坐标 和 半径
+    多边形	poly      顺时针 输入点的坐标
+    矩形	rect     对角线两顶点坐标 ALT+SHIFT + 向下
+-->
+
+    <map name="sun_other">
+        <area shape="circle" coords="359,198,45" href="https://baike.baidu.com/item/%E6%9C%A8%E6%98%9F/222105?fromtitle=%E5%B2%81%E6%98%9F&fromid=4361205" alt="木星" target="_blank">
+        <area shape="rect" coords="622,369,665,336" href="https://baike.baidu.com/item/%E5%86%A5%E7%8E%8B%E6%98%9F/137498?fromModule=lemma_search-box" alt="冥王星">
+        <area shape="poly"  coords="415,253,476,168,576,150,522,233" href="https://baike.baidu.com/item/%E5%9C%9F%E6%98%9F/136354?fromModule=lemma_search-box" alt="这是土星">
+    </map>
+</body>
+</html>
