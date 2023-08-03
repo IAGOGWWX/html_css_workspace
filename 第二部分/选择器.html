@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 通配符选择器 */
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /* ID选择器 */
+        #denggqt {
+            color: coral;
+        }
+
+        /* 元素选择器 */
+        p {
+            color: brown;
+        }
+
+        /* 类选择器 */
+        .poetry {
+            color: #008080;
+        }
+
+        a[href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Attribute_selectors"] {
+            color: #008080;
+        }
+
+        /* 存在 title 属性 */
+        a[title="属性选择器"] {
+            color: #ff4040;
+
+        }
+
+        /* 存在 href 属性并且属性值包含"mozilla.org"的 <a> 元素 */
+        a[href*="mozilla.org"] {
+            color: #0080ff;
+        }
+
+        /* 存在 href 属性并且属性值结尾是"Attribute_selectors"的 <a> 元素 */
+        a[href$="Attribute_selectors"] {
+            font-size: 2em;
+        }
+
+        /* 存在 class 属性并且属性值包含单词"zh-CN"的<a>元素 */
+        a[class~="CSS_Attribute"] {
+            color: rgb(38, 199, 107);
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+        a:hover {
+            color: #008080;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        span[class=huanghe]::before {
+            content: "白日依山尽，";
+            color: rgb(37, 47, 101);
+        }
+
+        span[class=huanghe]::after {
+            content: "白欲穷千里目，更上一层楼。";
+            color: red;
+        }
+
+
+
+        p {
+            text-indent: 2em;
+            line-height: 2;
+        }
+
+        p#first{
+            color: red;
+        }
+
+        p.two_para{
+            color: #008080;
+        }
+
+        .three_li>.three_para{
+            color: #ff8080;
+        }
+
+        div p{
+            text-decoration: underline;
+        }
+        /* .three_para这个元素的下一个兄弟元素 */
+        .three_para+p{
+            color: yellow;
+        }
+
+        /* .three_para这个元素的后面的所有兄弟元素 p元素 */
+        .three_para~p{
+            color: yellow;
+        }
+
+        /* 多个选择器, 用逗号分隔 语法糖 */
+        a,p,div{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p>好好学习，天天向上</p>
+
+    <div>
+
+        <h3 id="denggqt">登鹳雀楼</h1>
+            <span>唐·王之涣</span>
+            <div>
+                <div>
+                    <p class="poetry">白日依山尽，黄河入海流。</p>
+                </div>
+                <div>
+                    <p class="poetry">欲穷千里目，更上一层楼。</p>
+                </div>
+            </div>
+    </div>
+
+    <a class="CSS_Attribute" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Attribute_selectors"
+        title="属性选择器">属性选择器</a>
+
+
+    <a href="#">爱学习，好好看书</a>
+
+
+
+    <p>
+        <span class="huanghe">黄河入海流。</span>
+    </p>
+
+    <!-- div>ul>li*7>p>Lorem -->
+    <div>
+        <ul>
+            <li>
+                <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quo enim, consequuntur explicabo quibusdam eligendi perferendis dolor numquam quam beatae iusto maxime saepe sed error earum iure vero mollitia temporibus!</p>
+            </li>
+            <li >
+                <p class="two_para">Voluptatem voluptatibus dicta earum sequi hic magnam laboriosam eos ex corrupti, corporis reiciendis id. Dolore voluptate delectus optio minus reprehenderit autem, dolores unde voluptas magni necessitatibus impedit provident! Reiciendis, deleniti?</p>
+            </li>
+            <li class="three_li">
+                <p class="three_para">Pariatur, accusamus tempora, numquam, exercitationem natus consequuntur nostrum facere distinctio rerum quo laudantium harum optio ducimus autem dolorem voluptas perspiciatis voluptates quidem totam consequatur modi dolor. Ratione maxime esse alias!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quibusdam consectetur necessitatibus laudantium beatae quas doloribus quam! Possimus adipisci iusto, velit suscipit quia nisi sapiente, nesciunt voluptatum, aliquid quidem facere!</p>
+                <p>Exercitationem iusto eligendi eaque at blanditiis odit ullam excepturi beatae neque ex! Voluptatem dolorum dolor at id reprehenderit quidem temporibus facere culpa, explicabo, eveniet odit. Sapiente fuga suscipit voluptate eius.</p>
+                <p>Quibusdam aut dolorum, odit itaque saepe laborum architecto libero dolores exercitationem nemo, doloribus delectus provident eos distinctio fuga quia cumque veritatis, eius natus! Voluptates consequuntur omnis quae, quis magnam tenetur.</p>
+            </li>
+            <li>
+                <p>Pariatur voluptate omnis non aliquid sunt fugit. Fugit hic repellendus ipsa ipsam? Voluptates aperiam cumque necessitatibus ipsam! Omnis illum, doloremque odit, earum veritatis, ipsa alias ducimus officiis placeat nostrum dolores!</p>
+            </li>
+            <li>
+                <p>Ducimus rem sunt voluptate ex dolore incidunt architecto labore veritatis doloribus assumenda! Tempore non quisquam et doloremque! Doloremque officia non, nemo, porro nisi quod dolorem cumque pariatur distinctio, quidem quaerat.</p>
+            </li>
+            <li>
+                <p>Excepturi tempore dignissimos exercitationem. Minus ea nobis ipsam? Modi qui dignissimos, dolorem porro velit rem sapiente cupiditate nisi, mollitia temporibus omnis fugiat, assumenda perspiciatis tempore est tempora obcaecati molestiae vitae!</p>
+            </li>
+        </ul>
+    
+    </div>
+
+
+
+</body>
+
+</html>
