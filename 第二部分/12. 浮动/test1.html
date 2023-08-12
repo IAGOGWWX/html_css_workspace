@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: #008080;
+        }
+        .left{
+
+            width: auto;
+            background-color: red;
+            float: left;
+            margin: auto;
+
+
+        }
+        .right{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: right;
+
+        }
+        span{
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <span>当一个元素浮动后，元素必定为块盒(更改display属性为block)</span>
+        <div class="left">margin为auto，为0.</div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
