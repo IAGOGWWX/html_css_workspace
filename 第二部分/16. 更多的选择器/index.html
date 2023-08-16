@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: #000000;
+        }
+        /* 选择第一个子元素  */ 
+         /* .container>p:first-child{
+            background-color: red;
+        }
+        /* 选中子元素中第一个指定类型的元素 */
+        /* .container>span:first-of-type{
+            background-color: red;
+
+        } */
+
+        /* .container>a:last-child{
+            background-color: red;
+        } */
+        /* 选中第六个元素 ，而且这个元素必须是a元素 */
+
+        /* .container a:nth-child(2n){
+            background-color: red;
+        } */
+
+        /* 选中第三个a元素 ，其它元素不参加计数 */
+        .container a:nth-of-type(3){
+            background-color: red;
+
+        }
+
+        
+        a{
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <a href="">Lorem.</a><a href="">Impedit!</a><span>我是span</span><a href="">Harum?</a><a href="">Quos.</a><a href="">Maxime?</a><span>我是span</span><a href="">Fuga?</a><a href="">Laborum.</a><a href="">Explicabo?</a><a href="">Atque.</a><a href="">Sint.</a>
+    </div>
+    
+</body>
+</html>
