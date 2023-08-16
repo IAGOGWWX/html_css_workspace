@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二级菜单</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+
+    <style>
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .header{
+            background: #666;
+            color: #666;
+            height: 40px;
+            line-height: 40px;
+            position:fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+
+        }
+ 
+        .header .topnav>li{
+            float: left;
+            width: 150px;
+            height: 40px;
+            color: #999;
+
+            margin: 0 20px;
+
+
+            padding: 0 20px;
+
+            text-align: center;
+            box-sizing: border-box;
+            position: relative;
+
+        }
+
+        .header .topnav>li:hover{
+            background: #fff;
+            border: 2px solid #ccc;
+            border-bottom: none;
+            line-height: 36px;
+            background: #fff;
+
+
+        }
+
+        .header .topnav>li .submenu{
+            width: 300px;
+            text-align: left;
+            line-height: 1.5;
+            position: absolute;
+            margin:2px 0;
+            right: -2px;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+            display: none;
+            background: #fff;
+
+            
+        }
+        .header .topnav>li:hover .submenu{
+            display: block;
+            padding: 10px;
+        }
+
+        .header .topnav>li:hover::after  {
+
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+        }
+
+    </style>
+
+    <header class="header">
+        <ul class="topnav clearfix">
+           <li><a href="">Lorem.</a></li>
+           <li><a href="">Consequuntur.</a></li>
+           <li><a href="">Aspernatur.</a></li>
+           <li>
+                <a href="">
+                    客户服务
+                </a>
+                <div class="submenu">
+                   
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aliquid aspernatur quia repellat. Ab fugit sequi dolor pariatur quidem quia voluptatibus iusto dolorem quis eos! Iusto, eaque quaerat asperiores commodi ullam fugiat cum alias harum sed illum inventore velit quos facere, odio accusamus! Delectus, culpa assumenda voluptatibus ullam ad animi.
+                </div>
+
+
+           </li>
+           <li><a href="">Accusantium!</a></li>
+        </ul>
+    </header>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestiae maxime nesciunt, inventore accusantium sint? Ipsa quisquam esse dolorem, illo, cupiditate nihil perferendis doloremque adipisci illum inventore atque tenetur dolor.</p>
+    <p>Optio pariatur fuga voluptates magni doloribus, fugit minima officiis rem ea magnam debitis beatae laborum facilis ullam veritatis, amet laboriosam! Nesciunt sequi iste quae eligendi quas. Atque sint ducimus beatae?</p>
+    <p>Sed dolore nisi dolorum maxime alias ducimus sit, nemo inventore soluta repellat eligendi laborum veritatis excepturi, similique deserunt blanditiis esse deleniti enim accusamus at nihil! Accusantium praesentium minus nihil esse!</p>
+    <p>Quisquam labore recusandae enim ducimus suscipit, officia inventore odit consequuntur vel temporibus vitae ab totam rem exercitationem accusantium consequatur. Blanditiis doloribus corporis culpa. Debitis tenetur iusto recusandae atque suscipit. Libero.</p>
+    <p>Expedita omnis illum ducimus recusandae officiis voluptates est unde, delectus blanditiis vero enim, provident laborum quidem assumenda eos reiciendis saepe temporibus eius ipsam error libero nulla nostrum! Praesentium, at sit!</p>
+    <p>Fuga excepturi quis exercitationem illum eligendi aperiam tempore architecto eveniet! Qui reprehenderit, quam veniam dolorem distinctio blanditiis earum illum recusandae sit facere maiores veritatis quibusdam repudiandae debitis voluptatum cumque omnis?</p>
+    <p>Eum tenetur dolore officiis porro, aut maxime tempore eos est mollitia reiciendis provident labore veniam ratione autem laboriosam sapiente sed aperiam voluptatem animi laborum! Adipisci est molestias ipsa provident accusantium.</p>
+    <p>Neque omnis pariatur, perspiciatis temporibus, delectus optio repellat nostrum magni quis nisi quisquam quas, eveniet ipsam. Quas, vitae tempora soluta explicabo, exercitationem possimus ex culpa dignissimos sint, voluptatem minus debitis.</p>
+    <p>Ut libero quia natus quisquam nulla harum veniam possimus, officiis architecto totam doloribus! Fuga accusantium deleniti architecto quae quod? Consectetur odio earum aperiam nesciunt natus minus enim! Eum, quaerat corrupti!</p>
+    <p>In modi voluptatem temporibus voluptatum. Provident vel veniam, molestias incidunt aspernatur dicta sunt doloribus perferendis autem deleniti nihil tempora et rem eveniet sequi accusantium assumenda nemo placeat non ipsa quas?</p>
+
+</body>
+
+</html>

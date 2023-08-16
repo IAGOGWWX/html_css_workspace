@@ -1,0 +1,113 @@
+.banner{
+    /* 定宽高 展示的宽度高度 */
+    position: relative;
+
+    width: 520px;
+    height: 304px;
+
+    margin: 20px auto;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.banner .imgs {
+    width: 1560px;
+    height: 304px;
+    /* margin-left: -1040px;  js通过控制这个属性可以切换图片 */
+}
+
+.banner .imgs img {
+    width: 520px;
+    height: 304px;
+}
+
+
+
+.banner .signGT_LT .rightSign,
+.banner .signGT_LT .leftSign {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+
+
+    /* background-color: #e00d0d00; */
+
+    line-height: 40px;
+    text-align: center;
+
+    font-size: 40px;
+
+    bottom: 0;
+    margin: auto;
+    
+
+    border-radius: 50px;
+    color: #fff;
+}
+
+.banner .signGT_LT .rightSign:hover,
+.banner .signGT_LT .leftSign:hover{
+
+    background-color: #fff;
+    color: red;
+    
+}
+
+.banner .signGT_LT .leftSign{
+
+    left: 0;
+    top: 0;
+    margin-left: 20px;
+
+
+}
+
+.banner .signGT_LT .rightSign{
+
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+}
+
+
+
+.banner .model{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .3);
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    line-height: 40px;
+
+}
+
+
+.banner .model .titleName{
+    padding: 0 10px;
+
+    float: left;
+}
+
+
+.banner .model .pots{
+    padding-right: 44px;
+    float: right;
+
+}
+
+.banner .model .pots li{
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.banner .model .pots li:hover{
+    background-color: #2600ff;
+}
