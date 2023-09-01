@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        .radio-item .radio{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 2px solid blue;
+            border-radius: 50%;
+            cursor: pointer;
+
+        }
+        .radio-item input:checked+.radio::after{
+            content: "";
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: blue;
+            margin-left: 2.5px;
+            margin-top: 2.5px;
+        }
+
+        .radio-item input[type="radio"]{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    请选择性别：
+    <label class="radio-item">
+        <input name="gender" type="radio">
+        <span class="radio"></span>
+        <span>男</span>
+    </label>
+
+    <label class="radio-item">
+        <input name="gender" type="radio">
+        <span class="radio"></span>
+        <span>女</span>
+    </label>
+</body>
+</html>
