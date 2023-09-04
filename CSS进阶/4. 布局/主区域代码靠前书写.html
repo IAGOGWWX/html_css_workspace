@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .container {
+            padding: 30px;
+            border: 3px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .left {
+            width: 300px;
+            background: lightblue;
+            position: absolute;
+            left: 0px;
+            top: 30px;
+        }
+
+        .right {
+            width: 300px;
+            background: lightblue;
+            margin-left: 20px;
+            position: absolute;
+            right: 0px;
+            top: 30px;
+        }
+
+        .main {
+            margin: 0 300px;
+            border: 2px solid;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container clearfix">
+
+        <div class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt libero praesentium dicta ullam, sunt ipsum quibusdam ex minima debitis odit omnis, nam earum voluptatum vero ratione! Veniam architecto, exercitationem culpa nemo placeat id, iste quo nam et beatae eius est iusto ratione! Impedit optio, dicta beatae maiores dolores non quos tempore aliquam nobis saepe inventore deserunt praesentium earum officia voluptatem cupiditate, nam quibusdam magni eveniet quo eius similique! Quas deserunt quasi ad quidem fugit. Eveniet quas sapiente eum totam unde repudiandae fugit quae repellat autem quidem quasi, repellendus cumque, iste nostrum est officiis sunt et nemo nobis! Maxime consequuntur libero architecto? Laudantium nihil consequatur sunt excepturi voluptatum quisquam officia, vel debitis consectetur ducimus sequi maiores pariatur id aspernatur. Sed dolor aspernatur expedita non dicta, sequi, doloribus beatae explicabo doloremque maxime dolore ipsum ab iure vero nostrum eos alias, debitis laborum iusto architecto. Soluta, itaque voluptatibus? Dolor, aliquid alias? Quisquam ut nulla recusandae maxime nostrum. Adipisci temporibus expedita doloremque accusamus nisi cumque quam odit voluptate blanditiis, assumenda fugiat quidem excepturi corrupti rerum unde ipsam commodi ea! Fugit iusto voluptatem officia modi, laboriosam quidem. Alias quae iure praesentium, beatae odio rem in nostrum quod suscipit ratione fugiat eaque dicta. Eligendi, nihil accusantium.</div>
+        <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maiores quae ut eos aliquam, doloremque aliquid repudiandae eius, eligendi totam minima, ipsum perferendis. Tempora dolor minima officia recusandae et dolore consequatur eligendi quas, mollitia officiis quos eos a, pariatur ad nulla iste facilis reprehenderit praesentium adipisci voluptatibus ea. Tempore rerum excepturi, dicta sed itaque numquam ipsam quod molestiae perferendis quia enim culpa exercitationem libero quis eaque. Ipsa, optio recusandae rerum fugit necessitatibus incidunt exercitationem, corporis corrupti cum velit impedit deserunt excepturi reiciendis ea accusamus provident qui praesentium error nisi aspernatur, quasi eius. Placeat vel laborum dolorem iste quod eum minima.</div>
+        <div class="right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum obcaecati veniam, dolorum laboriosam, quos blanditiis quisquam voluptate sunt laborum, earum nam maiores nemo! Id error ullam pariatur ex neque, labore voluptas possimus iste obcaecati hic, magnam assumenda excepturi eveniet nihil aut vel repellendus? Ipsam, eius architecto quae consequatur aliquid consequuntur nulla sapiente sequi, omnis maiores dignissimos impedit, aspernatur ducimus velit vero earum? Eius beatae neque commodi voluptatem distinctio obcaecati tempora, libero magnam quae officia mollitia necessitatibus eos incidunt vero cum corrupti sit atque? Rem eaque id, aperiam vitae nostrum amet ducimus voluptatibus delectus aliquam deserunt culpa nemo totam animi vero!</div>
+    </div>
+</body>
+
+</html>
