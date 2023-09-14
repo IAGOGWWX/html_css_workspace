@@ -181,59 +181,132 @@ html{
     background-position: -420px 0;
     padding-right: 3px;
 }
-/* 
-.header .anony-nav .site-name{
-    font-size: 23px;
-}
 
-.header .anony-srh{
+/* 头部结尾 */
 
- 
-    display: inline-block;
-    width: 272px;
-    height: 34px;
-    margin-left: 20px;
-    box-sizing: border-box;
 
-}
-.header .anony-srh input{
-    width: 250px;
-    height: 30px;
-    box-sizing: border-box;
-    font-size: 12px;
-    color: rgba(77, 64, 64, 0.5);
-    text-indent: 2px;
-    border:1px solid #ccc;
-    outline: none;
+/* 注册登录开始 */
+
+.anony-reg-new{
+    width: 100%;
+    height: 304px;
+    background: url("../img/iphoneBackground.jpg") no-repeat left top/53% ;
+    background-color: #edf4ed;
+    margin: 25px 0;
 
 
 }
 
 
-.header .anony-srh .bn{
-    margin-left: -26px;
-    cursor: pointer;
-    color: rgba(77, 64, 64, 0.5);
 
-}
-.header .anony-nav-links{
-    display: inline-block;
-    width: 514px;
-    height: 22px;
-
-    margin-left: 206px;
-
-}
-
-
-.header .anony-nav-links ul{
-    padding-right: 15px;
-}
-.header .anony-nav-links ul li{
-    float: left;
-    margin: 0 14px 0 0px;
-    width: 40px;
-    height: 20px;
-    font-size: 19px;
+.anony-reg-new .wrapper{
+    width: 950px;
+    height: 100%;
+    margin: 0 auto;
     
-} */
+}
+
+.anony-reg-new .wrapper .loadWrapper{
+    width: 600px;
+    height: 100%;
+    position: relative;
+
+}
+.anony-reg-new .wrapper .download{
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    right: 0;
+    top: 92px;
+}
+.anony-reg-new .wrapper .download .app-title{
+    font-size: 25px;
+    margin: 7px 0;
+}
+
+
+
+
+.anony-reg-new .wrapper .download .app-loadApp{
+    width: 145px;
+    height: 35px;
+    font-size: 12px;
+    margin-top: 44px;
+    padding-left: 5px;
+    padding-top: 9px;
+    position: relative;
+
+
+}
+.anony-reg-new .wrapper .download .app-loadApp a{
+
+    display: inline-block;
+    height: 30px;
+    width: 92px;
+    line-height: 30px;
+    background-color: green;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    
+
+}
+
+.anony-reg-new .wrapper .download .app-loadApp .app-imgqr{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background-color: aqua;
+    background: url(../img/icon_qrcode_green.png) no-repeat ;
+    box-sizing: border-box;
+    background-position: 50% 50%;
+    border: 1px solid green;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    background-size: 25px;
+}
+.anony-reg-new .wrapper .download .app-loadApp .imgWrapper{
+
+    width: 180px;
+    height: 220px;
+    position: absolute;
+    right: -137px;
+    top: 10px;
+    display: none;
+    background-color: #fff;
+
+}
+
+.anony-reg-new .wrapper .download .app-loadApp .app-imgqr+.imgWrapper:hover{
+    display: block;
+
+}
+.anony-reg-new .wrapper .download .app-loadApp .imgWrapper img{
+    width: 160px;
+    aspect-ratio: auto 160 / 160;
+    height: 190px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.anony-reg-new .wrapper .download .app-loadApp .imgWrapper p{
+    margin: 5px;
+    text-align: center;
+}
+
+
+/* 登录 */
+
+.anony-reg-new .wrapper .login{
+    width: 300px;
+    height: 300px;
+    background-color: gold;
+
+    
+}
+
+.anony-reg-new .wrapper .login iframe{
+    height: 300px; 
+    width: 300px;
+}
