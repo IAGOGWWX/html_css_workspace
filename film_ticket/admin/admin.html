@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4250615_x691vsolur.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background: url(../img/106.jpg) no-repeat center/100% fixed #000;
+        }
+        html{
+            width: 100%;
+            height: 100%;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+
+            background-color: #ccc;
+
+            opacity: 0.7;
+
+        }
+
+        .container .header {
+            width: 100%;
+            height: 150px;
+            background-color: aqua;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container .header .img-avatar {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            box-sizing: border-box;
+            position: absolute;
+            left: 30px;
+            top: 18px;
+            border-radius: 50%;
+        }
+
+        .container .header .img-avatar .img-user {
+            position: absolute;
+            width: 200px;
+            height: 50px;
+            background-color: bisque;
+            right: -213px;
+            top: 42px;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .container .btn {
+            background-color: #d9534f;
+            width: 158px;
+            height: 57px;
+            line-height: 54px;
+            color: #fff;
+
+            margin-top: 40px;
+            margin-right: 20px;
+            cursor: pointer;
+            border-radius: 23px;
+        }
+
+        .container .btn span,
+        .container .btn .icon-guanji {
+            font-size: 22px;
+
+        }
+
+        .container .timeClock {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            background-color: yellowgreen;
+            margin-top: 52px;
+            margin-right: 300px;
+            font-size: 24px;
+        }
+
+        .container .menu-header {
+            height: 100%;
+            width: 250px;
+            background-color: goldenrod;
+        }
+
+        .container .menu-header .menu-item {
+            height: 50px;
+            width: 250px;
+            line-height: 50px;
+            background-color: #d9534f;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* .container .menu-header .firstPage{
+            width: 1357px;
+            height: 50px;
+            background-color: #4f20af;
+        } */
+
+        .container .menu-header .menu-item-controls {
+            font-size: 20px;
+        }
+
+        .container .menu-header .menu-item-controls .basic {
+            width: 250px;
+            height: 40px;
+            background-color: cadetblue;
+            text-align: center;
+            line-height: 40px;
+            font-size: 22px;
+        }
+
+        .container .menu-header .menu-item-controls ul {
+
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        .container .iframe-windows {
+            width: 1400px;
+            height: 100%;
+            background-color: rgb(2, 19, 72);
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        .container .iframe-windows .iframe-windows-header {
+            height: 50px;
+            width: 100%;
+            background-color: #cebed2;
+            font-size: 20px;
+
+        }
+
+        .container .iframe-windows .iframe-windows-header a .firstPage-A {
+            line-height: 50px;
+            margin-left: 34px;
+        }
+
+        .container .iframe-windows .iframe-windows-header .web-info {
+            display: inline-block;
+        }
+
+        .container .iframe-windows .iframe-windows-header .language {
+            display: inline-block;
+        }
+
+        .container .iframe-windows .iframe-item {
+            width: 100%;
+            height: 100%;
+            background-color: brown;
+        }
+
+       
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            setInterval(function () {
+
+                //时间
+                var mydate = new Date();
+                var year = mydate.getFullYear()
+                var month = mydate.getMonth() + 1;
+                var data = mydate.getDate();
+                var h = mydate.getHours(); //获取当前小时数(0-23)
+                var m = mydate.getMinutes(); //获取当前分钟数(0-59)
+                var s = mydate.getSeconds(); //获取当前秒数(0-59)
+                var cg = year + "/" + month + "/" + data + "     " + h + ":" + m + ":" + s;
+                $("#cg").html(cg)
+
+            }, 1000)
+
+
+            
+
+            $("#tui").click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "tuichu",
+                    data: {},
+                    success: function(data) {
+                        window.location.reload();
+                    },
+                    error: function() {
+                        alert("服务器异常")
+                    }
+
+                });
+            })
+
+
+
+
+        })
+    </script>
+</head>
+
+<body class="clearfix">
+
+    <div class="container clearfix ">
+        <header class="header">
+            <div class="img-avatar">
+                <a href="">
+                    <img src="" alt="">
+                </a>
+                <div class="img-user">管理员:admin</div>
+            </div>
+            <button id="tui"id="tuichu"   data-toggle="modal" data-target="#myModal" class="btn right">
+                <div  class="iconfont icon-guanji"><span>退出登录</span></div>
+
+            </button>
+            <div class="timeClock right "><span id="cg">2023/9/13 17:23:39</span></div>
+
+        </header>
+
+        <div class="menu-header left">
+
+            <div class="menu-item-controls ">
+                <div class="menu-item iconfont icon-caidan ">
+                    <span>菜单列表</span>
+                </div>
+                <div class="basic"><span class="iconfont icon-yonghu"> 基本操作</span></div>
+                <ul id="ul">
+                    <li><a href="type?page=1" target="mainFrame"><span class="iconfont icon-youjiantou"> 电影类别管理</span></a></li>
+                    <li><a  href="isfilm?page=1" target="mainFrame"><span class="iconfont icon-youjiantou"> 电影信息管理</span></a></li>
+                    <li><a href="room?page=1" target="mainFrame"><span class="iconfont icon-youjiantou"> 放映大厅管理</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="iframe-windows right ">
+            <div class="iframe-windows-header">
+                <a href="home" target="mainFrame"><span class="firstPage-A">首页</span></a>
+                <div class="web-info">
+                    <span>/ 网址信息 /</span>
+                </div>
+                <div class="language">
+                    <span>当前语言:</span>
+                    <a href="">简体中文</a>
+                </div>
+            </div>
+            <div id="f" class="iframe-item">
+                <iframe id="iframe" name="mainFrame" scrolling="no" noresize="noresize" src="home" frameborder="no" />
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
